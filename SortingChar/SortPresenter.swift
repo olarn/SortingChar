@@ -15,21 +15,20 @@ protocol SortPresenterProtocol {
 }
 
 class SortPresenter {
-    
-    var vc: SortPresenterProtocol!
-    
-    init(vc: SortPresenterProtocol) {
-        self.vc = vc
+
+    var viewController: SortPresenterProtocol!
+
+    init(viewController: SortPresenterProtocol) {
+        self.viewController = viewController
     }
-    
+
     func sort(input: String) {
         if input.isEmpty {
-            vc.displayEnptyDisplay()
+            viewController.displayEnptyDisplay()
             return
         }
         let sorter = Sorter()
         let result = sorter.sort(input)
-        vc.displaySortedResult(result)
+        viewController.displaySortedResult(result)
     }
 }
-

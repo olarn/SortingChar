@@ -9,11 +9,11 @@
 import Foundation
 
 struct Sorter {
-    
+
     func sort(input: String) -> String {
-        let lowerCasedInput = input.lowercaseString
-        let replaceWhiteSpaceInput = lowerCasedInput.stringByReplacingOccurrencesOfString(" ", withString: "")
-        return String(Array(replaceWhiteSpaceInput.characters).sort())
+        let lowerCaseInput = input.lowercaseString
+        let replacedInput = lowerCaseInput.stringByReplacingOccurrencesOfString(" ", withString: "")
+        return String(Array(replacedInput.characters).sort())
     }
-    
+
 }

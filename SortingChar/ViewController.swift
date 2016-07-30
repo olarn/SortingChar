@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+
     @IBOutlet var txtInputField: UITextField!
     @IBOutlet var lblResult: UILabel!
 
@@ -26,11 +26,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnSortTapped(sender: AnyObject) {
-        let sortPresenter = SortPresenter(vc: self)
+        let sortPresenter = SortPresenter(viewController: self)
         let stringToSort = self.txtInputField.text!
         sortPresenter.sort(stringToSort)
     }
-    
+
 }
 
 extension ViewController: SortPresenterProtocol {
@@ -43,4 +43,3 @@ extension ViewController: SortPresenterProtocol {
         lblResult.text = "Please enter text before call sort."
     }
 }
-

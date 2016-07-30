@@ -9,20 +9,20 @@
 import XCTest
 
 class SortingCharUITests: XCTestCase {
-        
+
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
         XCUIApplication().launch()
     }
-    
+
     override func tearDown() {
         super.tearDown()
     }
 
     func testDisplaySortedCharWhenClickSort() {
         let app = XCUIApplication()
-        
+
         app.textFields["inputField"].tap()
         app.textFields["inputField"].typeText("zad")
         app.buttons["Sorting"].tap()

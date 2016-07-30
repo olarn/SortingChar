@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var txtInputField: UITextField!
+    @IBOutlet var lblResult: UILabel!
+
+    let sorter = Sorter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +25,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func btnSortTapped(sender: AnyObject) {
+        let sortPresenter = SortPresenter(vc: self)
+        let stringToSort = self.txtInputField.text!
+        sortPresenter.sort(stringToSort)
+    }
+    
+    func displaySortedResult(sortedString: String) {
+        lblResult.text = sortedString
+    }
 
 }
 

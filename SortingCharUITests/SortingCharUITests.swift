@@ -28,9 +28,15 @@ class SortingCharUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testDisplaySortedCharWhenClickSort() {
+        let app = XCUIApplication()
+        
+        app.textFields["inputField"].tap()
+        app.textFields["inputField"].typeText("zad")
+        
+        app.buttons["Sorting"].tap()
+        
+        XCTAssertTrue(app.staticTexts["SortedCharText"].label == "adz")
     }
     
 }

@@ -15,6 +15,8 @@
 		37021CEA1D4C59FA002C9849 /* SortingCharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37021CE91D4C59FA002C9849 /* SortingCharTests.swift */; };
 		37021CF51D4C59FA002C9849 /* SortingCharUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37021CF41D4C59FA002C9849 /* SortingCharUITests.swift */; };
 		37021D031D4C5BEC002C9849 /* Sorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37021D021D4C5BEC002C9849 /* Sorter.swift */; };
+		37021D051D4C88EC002C9849 /* SortControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37021D041D4C88EC002C9849 /* SortControllerTests.swift */; };
+		37021D071D4C8B86002C9849 /* SortPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37021D061D4C8B86002C9849 /* SortPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		37021CF41D4C59FA002C9849 /* SortingCharUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingCharUITests.swift; sourceTree = "<group>"; };
 		37021CF61D4C59FA002C9849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37021D021D4C5BEC002C9849 /* Sorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sorter.swift; sourceTree = "<group>"; };
+		37021D041D4C88EC002C9849 /* SortControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortControllerTests.swift; sourceTree = "<group>"; };
+		37021D061D4C8B86002C9849 /* SortPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				37021CDD1D4C59FA002C9849 /* LaunchScreen.storyboard */,
 				37021CE01D4C59FA002C9849 /* Info.plist */,
 				37021D021D4C5BEC002C9849 /* Sorter.swift */,
+				37021D061D4C8B86002C9849 /* SortPresenter.swift */,
 			);
 			path = SortingChar;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			children = (
 				37021CE91D4C59FA002C9849 /* SortingCharTests.swift */,
 				37021CEB1D4C59FA002C9849 /* Info.plist */,
+				37021D041D4C88EC002C9849 /* SortControllerTests.swift */,
 			);
 			path = SortingCharTests;
 			sourceTree = "<group>";
@@ -261,6 +267,7 @@
 			files = (
 				37021D031D4C5BEC002C9849 /* Sorter.swift in Sources */,
 				37021CD71D4C59FA002C9849 /* ViewController.swift in Sources */,
+				37021D071D4C8B86002C9849 /* SortPresenter.swift in Sources */,
 				37021CD51D4C59FA002C9849 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37021CEA1D4C59FA002C9849 /* SortingCharTests.swift in Sources */,
+				37021D051D4C88EC002C9849 /* SortControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SortPresenterProtocol {
     
     @IBOutlet var txtInputField: UITextField!
     @IBOutlet var lblResult: UILabel!

@@ -31,11 +31,11 @@ class SortControllerTests: XCTestCase {
     }
 }
 
-class MockViewController: ViewController {
+class MockViewController: SortPresenterProtocol {
     
     var spyCall: Bool = false
     
-    override func displaySortedResult(sortedString: String) {
+    func displaySortedResult(sortedString: String) {
         spyCall = true
     }
     

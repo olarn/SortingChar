@@ -9,11 +9,15 @@
 import Foundation
 import UIKit
 
+protocol SortPresenterProtocol {
+    func displaySortedResult(result: String)
+}
+
 class SortPresenter {
     
-    var vc: ViewController!
+    var vc: SortPresenterProtocol!
     
-    init(vc: ViewController) {
+    init(vc: SortPresenterProtocol) {
         self.vc = vc
     }
     

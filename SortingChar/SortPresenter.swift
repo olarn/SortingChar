@@ -11,6 +11,7 @@ import UIKit
 
 protocol SortPresenterProtocol {
     func displaySortedResult(result: String)
+    func displayEnptyDisplay()
 }
 
 class SortPresenter {
@@ -23,6 +24,7 @@ class SortPresenter {
     
     func sort(input: String) {
         if input.isEmpty {
+            vc.displayEnptyDisplay()
             return
         }
         let sorter = Sorter()

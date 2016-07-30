@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, SortPresenterProtocol {
+class ViewController: UIViewController {
     
     @IBOutlet var txtInputField: UITextField!
     @IBOutlet var lblResult: UILabel!
@@ -31,9 +31,16 @@ class ViewController: UIViewController, SortPresenterProtocol {
         sortPresenter.sort(stringToSort)
     }
     
+}
+
+extension ViewController: SortPresenterProtocol {
+
     func displaySortedResult(sortedString: String) {
         lblResult.text = sortedString
     }
 
+    func displayEnptyDisplay() {
+        lblResult.text = "Please enter text before call sort."
+    }
 }
 

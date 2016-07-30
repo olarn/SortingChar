@@ -118,8 +118,8 @@
 		37021CE81D4C59FA002C9849 /* SortingCharTests */ = {
 			isa = PBXGroup;
 			children = (
-				37021CE91D4C59FA002C9849 /* SortingCharTests.swift */,
 				37021CEB1D4C59FA002C9849 /* Info.plist */,
+				37021CE91D4C59FA002C9849 /* SortingCharTests.swift */,
 				37021D041D4C88EC002C9849 /* SortControllerTests.swift */,
 			);
 			path = SortingCharTests;

@@ -39,4 +39,14 @@ class SortingCharUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["SortedCharText"].label == "adz")
     }
     
+    func testDisplayBlankWhenCharIsEmpty() {
+        let app = XCUIApplication()
+        
+        app.textFields["inputField"].tap()
+        app.textFields["inputField"].typeText("")
+        
+        app.buttons["Sorting"].tap()
+        
+        XCTAssertTrue(app.staticTexts["SortedCharText"].label == "Please enter text before call sort.")
+    }
 }

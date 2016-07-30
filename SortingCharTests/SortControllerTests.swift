@@ -27,16 +27,21 @@ class SortControllerTests: XCTestCase {
         let vc = MockViewController()
         let sortPresenter = SortPresenter(vc: vc)
         sortPresenter.sort("")
-        XCTAssertTrue(vc.spyCall == false)
+        XCTAssertTrue(vc.spyDiplayEmpty == true)
     }
+    
 }
 
 class MockViewController: SortPresenterProtocol {
     
     var spyCall: Bool = false
+    var spyDiplayEmpty: Bool = false
     
     func displaySortedResult(sortedString: String) {
         spyCall = true
     }
     
+    func displayEnptyDisplay() {
+        spyDiplayEmpty = true
+    }
 }

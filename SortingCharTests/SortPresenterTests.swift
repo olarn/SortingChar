@@ -9,7 +9,7 @@
 import XCTest
 @testable import SortingChar
 
-class SortControllerTests: XCTestCase {
+class SortPresenterTests: XCTestCase {
 
     override func setUp() {
         super.setUp()

@@ -14,14 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet var lblResult: UILabel!
 
     // Dependencies #1
-    var sorter: Sorter!
     var sortPresenter: SortPresenter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Dependencies #2
-        self.sorter = Sorter()
         self.sortPresenter = SortPresenter(viewController: self)
     }
 

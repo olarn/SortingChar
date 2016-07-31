@@ -13,7 +13,8 @@ struct Sorter {
     func sort(input: String) -> String {
         let lowerCaseInput = input.lowercaseString
         let replacedInput = lowerCaseInput.stringByReplacingOccurrencesOfString(" ", withString: "")
-        return String(Array(replacedInput.characters).sort())
+        let sortedString = String(Array(replacedInput.characters).sort())
+        return sortedString
     }
 
 }

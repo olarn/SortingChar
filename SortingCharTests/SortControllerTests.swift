@@ -40,7 +40,7 @@ class MockViewController: SortPresenterProtocol {
         spyCall = true
     }
 
-    func displayEnptyDisplay() {
+    func displayEmptyDisplay() {
         spyDiplayEmpty = true
     }
 }

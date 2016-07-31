@@ -13,11 +13,16 @@ class ViewController: UIViewController {
     @IBOutlet var txtInputField: UITextField!
     @IBOutlet var lblResult: UILabel!
 
-    let sorter = Sorter()
+    // Dependencies #1
+    var sorter: Sorter!
+    var sortPresenter: SortPresenter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Dependencies #2
+        self.sorter = Sorter()
+        self.sortPresenter = SortPresenter(viewController: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,20 +31,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnSortTapped(sender: AnyObject) {
-        let sortPresenter = SortPresenter(viewController: self)
         let stringToSort = self.txtInputField.text!
-        sortPresenter.sort(stringToSort)
+        self.sortPresenter.sort(stringToSort)
     }
-
 }
 
 extension ViewController: SortPresenterProtocol {
 
     func displaySortedResult(sortedString: String) {
-        lblResult.text = sortedString
+        self.lblResult.text = sortedString
     }
 
-    func displayEnptyDisplay() {
-        lblResult.text = "Please enter text before call sort."
+    func displayEmptyDisplay() {
+        self.lblResult.text = "Please enter text before call sort."
     }
 }

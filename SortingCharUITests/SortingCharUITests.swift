@@ -32,7 +32,14 @@ class SortingCharUITests: XCTestCase {
     func testDisplayBlankWhenCharIsEmpty() {
         let app = XCUIApplication()
         app.textFields["inputField"].tap()
-        app.textFields["inputField"].typeText("")
+        app.textFields["inputField"].typeText("zad")
+        app.buttons["Sorting"].tap()
+
+        let deleteKey = app.keys["delete"]
+        deleteKey.tap()
+        deleteKey.tap()
+        deleteKey.tap()
+
         app.buttons["Sorting"].tap()
         let expectError = "Please enter text before call sort."
         XCTAssertTrue(app.staticTexts["SortedCharText"].label == expectError)

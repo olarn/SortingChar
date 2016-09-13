@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func btnSortTapped(sender: AnyObject) {
+    @IBAction func btnSortTapped(_ sender: AnyObject) {
         let stringToSort = self.txtInputField.text!
         self.sortPresenter.sort(stringToSort)
     }
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
 
 extension ViewController: SortPresenterProtocol {
 
-    func displaySortedResult(sortedString: String) {
+    func displaySortedResult(_ sortedString: String) {
         self.lblResult.text = sortedString
     }
 

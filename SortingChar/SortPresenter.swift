@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol SortPresenterProtocol {
-    func displaySortedResult(result: String)
+    func displaySortedResult(_ result: String)
     func displayEmptyDisplay()
 }
 
@@ -22,7 +22,7 @@ class SortPresenter {
         self.viewController = viewController
     }
 
-    func sort(input: String) {
+    func sort(_ input: String) {
         if input.isEmpty {
             self.viewController.displayEmptyDisplay()
             return

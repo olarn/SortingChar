@@ -10,10 +10,10 @@ import Foundation
 
 struct Sorter {
 
-    func sort(input: String) -> String {
-        let lowerCaseInput = input.lowercaseString
-        let replacedInput = lowerCaseInput.stringByReplacingOccurrencesOfString(" ", withString: "")
-        let sortedString = String(Array(replacedInput.characters).sort())
+    func sort(_ input: String) -> String {
+        let lowerCaseInput = input.lowercased()
+        let replacedInput = lowerCaseInput.replacingOccurrences(of: " ", with: "")
+        let sortedString = String(Array(replacedInput.characters).sorted())
         return sortedString
     }
 

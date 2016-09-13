@@ -36,7 +36,7 @@ class MockViewController: SortPresenterProtocol {
     var spyCall: Bool = false
     var spyDiplayEmpty: Bool = false
 
-    func displaySortedResult(sortedString: String) {
+    func displaySortedResult(_ sortedString: String) {
         spyCall = true
     }
 
